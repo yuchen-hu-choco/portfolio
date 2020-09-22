@@ -1,0 +1,301 @@
+body {
+	background-color: #dcdde1;
+	font-size: 16px;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	color: #718093;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #192a56;
+}
+
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.slides-navigation .down {
+	width: 47px;
+	height: 47px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.slides-navigation a.down {
+	right: 10px;
+	background-image: url(../img/icon/down.png);
+}
+
+.titleMessage {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 50%;
+	z-index: 5;
+	text-align: center;
+	margin-top: -100px;
+}
+
+.main {
+	color: white;
+	text-shadow: 0px 5px 10px rgba(211, 211, 211, 0.8);
+	font-weight: 500;
+	letter-spacing: 5px;
+	font-size: 50px;
+}
+
+.sub {
+	color: white;
+	font-weight: 200;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+
+.section {
+	padding: 100px 0;
+}
+
+.aboutImage {
+	max-width: 80%;
+}
+
+.skillsSection
+ {
+	background-color: #353b48;
+	color: #f5f6fa
+}
+
+.skill {
+	text-align: center;
+	margin-left: 10px;
+}
+
+.chart {
+	position: relative;
+	width: 152px;
+	height: 152px;
+	display: inline-block;
+	text-align: center;
+}
+
+.chart canvas {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.chart .percent {
+	line-height: 152px;
+	display: inline-block;
+	font-size: 25px;
+}
+
+.chart .percent:after {
+	content:'%';
+}
+
+.contactSection {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #9c88ff;
+	color: white;
+}
+
+.contactButton {
+	color: white;
+	padding: 15px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 2px solid white;
+	border-radius: 4px;
+}
+
+.contactButton:hover {
+	text-decoration: none;
+	color:#dcdde1;
+	background-color: #8c7ae6;
+}
+
+.left {
+	border-left: 2px solid white;
+}
+
+.links {
+	margin: 10px 10px;
+	width: 40px;
+	height: 40px;
+}
+
+.mid {
+	margin-left: 5px;
+}
+
+.experienceSection {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: white;
+}
+
+.experienceTitle {
+	text-align: center;
+}
+
+.portfolioSection {
+	padding: 100px 0px;
+	background-color: #fbc531;
+	color: white;
+}
+
+.portfolioSection .heading {
+	text-align: center;
+	padding-bottom: 40px; 
+	width: 100%;
+}
+
+.filter {
+	text-align: center;
+	width: 100%;
+}
+.filter a {
+	border: 1px solid #f5f6fa;
+	padding: 10px 18px;
+}
+
+.filter li {
+	display: inline-block;
+	padding: 5px;
+}
+
+.filter .current {
+	background-color: #e1b12c;
+	color: #f5f6fa;
+}
+
+.itemsContainer {
+	padding-top: 30PX;
+	width: 100%;
+}
+
+.items li img {
+	width: 100%;
+	-webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item {
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+
+.items .icons {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	left: 50%;
+	top: 50%;
+	margin: -20px auto 0 -47px;
+	text-align: center;
+	z-index: 3;
+}
+
+.items .icons i {
+	color: white;
+	font-size: 22px;
+	margin-top: 9px;
+}
+
+.items .link {
+	width: 40px;
+	height: 40px;
+	background-color: #fbc531;
+	position: relative;
+	display: inline-block;
+
+	-webkit-transition: all 0.2s linear, 0.5s;
+    -moz-transition: all 0.2s linear, 0.5s;
+    -o-transition: all 0.2s linear, 0.5s;
+    -ms-transition: all 0.2s linear, 0.5s;
+    -transition: all 0.2s linear, 0.5s;
+}
+
+.items .portfolioLinks {
+	text-align: center;
+}
+
+.items .imageOverlay {
+	width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+
+    -webkit-transition: all 0.2s linear, 1s;
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s;
+}
+
+.items .item:hover .imageOverlay {
+	opacity: 1;
+}
+
+.items .openButton {
+	float: left;
+	left: -200px;
+}
+
+.items .projectLink {
+	float: right;
+	right: -200px;
+}
+
+.items .item:hover .openButton {
+	left: 0px;
+}
+
+.items .item:hover .projectLink {
+	right: 0px;
+}
+
+.items .item:hover img {
+	-webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -transform: scale(1.05, 1.05);
+}
+
+.items {
+	padding: 0;
+}
+
+.copyrightSection {
+	background-color: #353b48;
+	color: #00a8ff;
+	padding: 30px 5px;
+}
+
+.copyrightSection p {
+	margin: 0;
+}
+
