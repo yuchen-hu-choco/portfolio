@@ -25,6 +25,56 @@ a:hover {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
+.loader {
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 1000;
+}
+
+.loader .inner {
+	width: 100%;
+	height: 100%;
+	background: url(../img/icon/loader2.gif) center center no-repeat;
+}
+
+#navigation {
+	opacity:0.8;
+	position: fixed;
+	top: 0;
+	background-color: #2f3640;
+	padding: 15px 15px;
+	z-index: 100;
+	width: 100%;
+}
+
+#navigation li {
+	padding: 0 10px;
+}
+
+#navigation li a {
+	color: white;
+}
+
+#navigation li a:hover {
+	color: #f5f6fa;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+.navbar-brand:hover{
+	color: white;
+}
+
+.navbar-toggler {
+	background: url(../img/icon/menu.png) center center no-repeat;
+	background-size: 70%;
+}
 
 .slides-navigation .down {
 	width: 47px;
@@ -35,6 +85,7 @@ a:hover {
 
 
 .slides-navigation a.down {
+	opacity: 0.85;
 	right: 10px;
 	background-image: url(../img/icon/down.png);
 }
