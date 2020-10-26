@@ -1,3 +1,11 @@
+function fresh(){  
+    if(location.href.indexOf("?reload=true")<0){
+        location.href+="?reload=true";  
+    }  
+}  
+setTimeout("fresh()", 200);
+
+
 $(window).on("load", function() {
 	$(".loader .inner").fadeOut(300, function() {
 		$(".loader").fadeOut(500);
